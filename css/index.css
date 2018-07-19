@@ -134,7 +134,7 @@ nav a:hover::before {
 html, body {
 	height: 100%;
 }
-h1, h2,h3, h4,h5, h6, p{
+h1, h2,h3, h4,h5, h6{
 	margin-top: 20px;
 
 
@@ -158,11 +158,11 @@ h1, h2,h3, h4,h5, h6, p{
 }.
 
 .sectTwo {
-	background-image: url("../img/landing.jpg");
+	background-image: url("../img/fspaceback.png");
 }
 
 .sectThree{
-	background-image: url("../img/land.jpg");
+	background-image: url("../img/fspaceback.png");
 
 }
 @media screen and (max-width: 600px) {
@@ -222,17 +222,19 @@ h1, h2,h3, h4,h5, h6, p{
   min-height: 400px;
 }
 .four{
-  background-color: #E0E0E0;
-  min-height: 260px;
+  background-color: #34ADFF;
+  background-image: -webkit-linear-gradient(170deg, #008000 30%, #000 30%);
+  min-height: 400px;
 }
 .five{
-  background-color: #EFEEEF;
-  min-height: 260px;
+  background-color: #34ADFF;
+  background-image: -webkit-linear-gradient(30deg, #F0D964 60%, #EEE8AA 60%);
+  min-height: 400px;
 }
 
 .six{
   background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(20deg, #34ADFF 45%, #4CBFFF 45%);
+  background-image: -webkit-linear-gradient(30deg, #F0D964 60%, #EEE8AA 60%);
   min-height: 400px;
 }
 .seven{
@@ -249,9 +251,12 @@ h1, h2,h3, h4,h5, h6, p{
     text-align: left;
 
 }
+.fspacetext{
+	color: #008000;
+}
 
 .spacingup{
-	padding-top: 15px;
+	padding-top: 35px;
 	padding-left: 20px;
 }
 
@@ -306,11 +311,9 @@ h1, h2,h3, h4,h5, h6, p{
     border: 1px solid #A27F0E;
 }
 
-
 /*/contact form*/
 .west{
     width: 50%;
-    margin-right: 5%;
 }
 .south {
     width: 40%;
@@ -327,8 +330,21 @@ h1, h2,h3, h4,h5, h6, p{
     }
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #968D54;
+}
+::placeholder {
+    color: #968D54;
+    opacity: 1; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #968D54;
+}
 
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #968D54;
+}
 
 
 
@@ -362,3 +378,7 @@ footer {
 	background-color: #EEE8AA;
 }
 
+
+.fspacefooter{
+	background-color: #000;
+}
