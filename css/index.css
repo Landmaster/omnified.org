@@ -23,6 +23,7 @@ body {
 	background-size: contain;
 	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
 	font-weight: 100;
+	color: #000;
 	background: linear-gradient(to right, #EEE8AA, #FAFAD2, #EEE8AA);
 	
 }
@@ -113,7 +114,7 @@ nav a::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: #D9FFF7;
+  background-color: #fff;
 
   position: absolute;
   top: 0;
@@ -133,11 +134,9 @@ nav a:hover::before {
 html, body {
 	height: 100%;
 }
-
-h1, h2, h3, h4,h5, h6, p{
+h1, h2,h3, h4,h5, h6, p{
 	margin-top: 20px;
-	margin-left: 40px;
-	margin-right: 40px;
+
 
 }
 
@@ -185,7 +184,6 @@ h1, h2, h3, h4,h5, h6, p{
     margin-left: 4%;
 }
 .mainbody{
-	padding-top: 20px;
 	margin-left: 15%;
 	margin-right: 15%;
 }
@@ -209,18 +207,18 @@ h1, h2, h3, h4,h5, h6, p{
 
 .one{
   background-color: #013A6B;
-  background-image: -webkit-linear-gradient(150deg, #F2CB3D 45%, #EEE8AA 45%);
+  background-image: -webkit-linear-gradient(160deg, #F2CB3D 41%, #EEE8AA 41%);
   min-height: 400px;
 }
 .two{
-  background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #F0D964 25%, #EEE8AA 25%);
-  min-height: 400px;
+  background-color: #EEE8AA;
+
+  min-height: 150px;
 }
 
 .three{
   background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(150deg, #E8A744 39%, #EEE8AA 39%);
+  background-image: -webkit-linear-gradient(30deg, #F0D964 60%, #EEE8AA 60%);
   min-height: 400px;
 }
 .four{
@@ -234,7 +232,7 @@ h1, h2, h3, h4,h5, h6, p{
 
 .six{
   background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #34ADFF 45%, #4CBFFF 45%);
+  background-image: -webkit-linear-gradient(20deg, #34ADFF 45%, #4CBFFF 45%);
   min-height: 400px;
 }
 .seven{
@@ -243,10 +241,91 @@ h1, h2, h3, h4,h5, h6, p{
   min-height: 200px;
 }
 
+.formWrapper{
+	color: #000;
+    width:100%;
+    max-width:600px;
+    padding-top: 30px;
+    text-align: left;
+
+}
+
+.spacingup{
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+.field{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 0;
+    cursor: text;
+    border: 1px solid black;
+    margin: 3px;
+    width: 100%;
+    padding-left: 1px;
+    max-width: 400px;
+    height: 35px;
 
 
+}
+
+/*message*/
+#message{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    padding-left: 2px;
+
+}
+
+.contactbutt{
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    transition: background-color .5s, color .5s, border .5s;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding-left: 2px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.contactbutt:hover{
+    color: #A27F0E;
+    border: 1px solid #A27F0E;
+}
 
 
+/*/contact form*/
+.west{
+    width: 50%;
+    margin-right: 5%;
+}
+.south {
+    width: 40%;
+    margin-left: 5%;
+}
+.contactcolumn {
+    float: left;
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .contactcolumn {
+        width: 100%;
+    }
+}
 
 
 
@@ -264,8 +343,17 @@ h1, h2, h3, h4,h5, h6, p{
 	margin-top: 2%;
 }
 
-
-
+.mainbodycontact{
+	margin-left: 23%;
+	margin-right: 23%;
+}
+.sponsordiv{
+	width: 100%;
+	margin: center;
+	text-align: center;
+	display: inline-block;
+	padding-top: 10px;
+}
 footer {
 	width: 100%;
 	margin: center;

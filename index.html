@@ -41,19 +41,15 @@
 	</script>
     <body>
 		<header role='navigation'>
-			<div class="container">
-				<img src="img/orionlogowhite.png" id = 'fading' alt = "logo" class="logo">
-				<nav>
-					<ul>
-						<li><a href="fspace.html">F[Space]</a></li>
-						<li><a href="stemdr.html">STEM Dominicana</a></li>
-						<li><a href="thecc">The CC</a></li>
-						<li><a href="learncompsci.html">learncompsci.org</a></li>
-						<li><a href="other.html">other</a></li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-				</nav>
-			</div>
+	<!--Navigation bar-->
+
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function(){
+  				$("#nav-placeholder").load("nav.html");
+			});
+		</script>
+	<!--end of Navigation bar-->
 		</header>
 		<h1 class = "titlepagetext"role='navigation'>INNOVATION IS FOR EVERYONE</h1>
 
@@ -79,26 +75,57 @@
 			</div>	
 
 
-<div class="two"></div>
+			<div class="two">
+				<div class = "mainbody">
+					<p class ="">Sponsors/Partners</p>
+					<div class = "sponsordiv">
+						
+	  					<img src="img/princeton.png" alt = "sponsor" class="sponsor">
+	  					<img src="img/walmart.png" alt = "sponsor" class="sponsor">
+	  					
+	  					<img src="img/uth.png" alt = "sponsor" class="sponsor">
+						
+  					</div>
+				</div>
+			</div>
 
-<div class="three"></div>
+			<div class="three">
+				<div class = "mainbodycontact">
+					<a name="contactloc"></a>
+				    
+				    <div class="row">
+					    <div class="contactcolumn west">
+					        <div class="formWrapper">
+					            <input type="text" class="field" required name="name" placeholder="Name">
+					            <input type="text" class="field" required name="email" placeholder="Email">
+					            <textarea id = "message" class="field" name="Message" required placeholder="Message"></textarea>
+					            <input class="contactbutt" type="submit" value="Contact us!">
+					            </form>
+					        </div> 
+					    </div>
+					    <div class="contactcolumn south">
+					        <div class = "formatdiv">
+					            <p class = 'spacingup'> outreach@omnified.org</p>
+					        </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
 
-<div class="four"></div>
+<!-- <div class="four"></div>
 
 <div class="five"></div>
 
 <div class="six"></div>
 
-<div class="seven"></div>
+<div class="seven"></div> -->
 
 
 </body>
 <footer>
 
-	<p>Sponsors/Partners<p>
-  	<img src="img/princeton.png" alt = "sponsor" class="sponsor">
-  	<img src="img/walmart.png" alt = "sponsor" class="sponsor">
-  	<img src="img/uth.png" alt = "sponsor" class="sponsor">
+	
   	<div class = paypal>
   		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 		<input type="hidden" name="cmd" value="_s-xclick">
