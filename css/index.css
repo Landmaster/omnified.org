@@ -19,12 +19,15 @@ body {
 	background-repeat: no-repeat ;
 	background-attachment: fixed;
 	background-width:100%;
+	width: 100%;
 	background-position: center;
 	background-size: contain;
 	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
 	font-weight: 100;
 	color: #000;
-	background: linear-gradient(to right, #EEE8AA, #FAFAD2, #EEE8AA);
+	background-color: #013A6B;
+  background-image: -webkit-linear-gradient(160deg, #F2CB3D 35%, #EEE8AA 35%);
+  min-height: 1000px;
 	
 }
 .titlepagetext{
@@ -37,6 +40,48 @@ body {
 	margin-top: 23%;	
 	color:#fff;
 	font-size: 40px;
+  	
+ 	
+}
+.orionimg{
+	width: 250px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	border: 0px solid black;
+    white-space: nowrap;
+	margin-top: 23%;	
+	color:#fff;
+	font-size: 40px;
+  	
+ 	
+}
+.titlepagetextbottomleft{
+width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -210px;
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;  
+	border: 0px solid black;
+    white-space: nowrap;
+	margin-top: 23%;	
+	color:#fff;
+	font-size: 40px;
+  	
+ 	
+
+}
+
+.titlepagetextcomp{
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -370px;
+	border: 0px solid black;
+    white-space: nowrap;
+	margin-top: 23%;	
+	color:#fff;
+	font-size: 20px;
   	
  	
 }
@@ -135,7 +180,7 @@ html, body {
 	height: 100%;
 }
 h1, h2,h3, h4,h5, h6{
-	margin-top: 20px;
+	padding-top: 20px;
 
 
 }
@@ -146,6 +191,13 @@ h1, h2,h3, h4,h5, h6{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	text-align: center;
+}
+.sectbott {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: bottom;
 }
 
 .subSection {
@@ -165,6 +217,29 @@ h1, h2,h3, h4,h5, h6{
 	background-image: url("../img/fspaceback.png");
 
 }
+
+.sectFour{
+	background-image: url("../img/backstdr.jpg");
+
+}
+
+.sectFive{
+	background-image: linear-gradient(to right top, #6c8be6, #837fef, #a46def, #c851e7, #eb12d4);
+}
+
+.sectSix{
+	background-image: radial-gradient(circle, #303030, #252525, #1b1b1b, #111111, #000000);
+}
+
+.sectSeven{
+	background-image: url("../img/other.jpg");
+}
+.sectEight{
+	background-image: url("../img/orion.jpg");
+}
+
+
+
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
@@ -193,21 +268,33 @@ h1, h2,h3, h4,h5, h6{
 }
 
 .imageright{
-	width: 100%;
-	max-width: 400px;
+	height: 100%;
+	max-height:200px;
 	padding-left: 10px;
-	margin-top:25%;
+	margin-top:21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;float:right;
+}
+.imagerightlong{
+	height: 100%;
+	max-height:300px;
+	padding-left: 10px;
+	margin-top:21%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;float:right;
 }
 
-
+.textwhite{
+	color:white;
+}
 
 .one{
   background-color: #013A6B;
-  background-image: -webkit-linear-gradient(160deg, #F2CB3D 41%, #EEE8AA 41%);
+  background-image: -webkit-linear-gradient(160deg, #F2CB3D 35%, #EEE8AA 35%);
   min-height: 400px;
 }
 .two{
@@ -228,19 +315,24 @@ h1, h2,h3, h4,h5, h6{
 }
 .five{
   background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #F0D964 60%, #EEE8AA 60%);
+  background-image: -webkit-linear-gradient(40deg, #A2D6FF 70%, #0C84E4 70%);
   min-height: 400px;
 }
 
 .six{
   background-color: #34ADFF;
-  background-image: -webkit-linear-gradient(30deg, #F0D964 60%, #EEE8AA 60%);
+  background-image: -webkit-linear-gradient(30deg, #c851e7 20%, #a46def 20%);
   min-height: 400px;
 }
 .seven{
   background-color: #013A6B;
-  background-image: -webkit-linear-gradient(150deg, #013A6B 35%, #004E95 35%);
-  min-height: 200px;
+  background-image: -webkit-linear-gradient(150deg, #000 35%, #fff 35%);
+  min-height: 400px;
+}
+.eight{
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(160deg, #F2CB3D 35%, #EEE8AA 35%);
+  min-height: 1000px;
 }
 
 .formWrapper{
@@ -257,7 +349,7 @@ h1, h2,h3, h4,h5, h6{
 
 .spacingup{
 	padding-top: 35px;
-	padding-left: 20px;
+	padding-left: 100px;
 }
 
 .field{
@@ -378,7 +470,110 @@ footer {
 	background-color: #EEE8AA;
 }
 
-
+.compscifooter{
+	background-color: #fff;
+}
 .fspacefooter{
 	background-color: #000;
+}
+.stemfooter{
+	background-color: #A2D6FF;
+}
+.ccfooter{
+	background-color: #a46def;
+}
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+.keep100{
+	width:100%;
+}
+
+.collegeimg{
+	width: 350px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	border: 0px solid black;
+    white-space: nowrap;
+	margin-top: 23%;	
+	color:#fff;
+	font-size: 40px;
+
+
+}
+.spacerdiv{
+
+	padding-bottom: 20px;
+	
+}
+.bioCol{
+    width: calc(100% / 3);
+
+}
+.projectsCol{
+    width: calc(100% / 3);
+    background-color: white;
+}
+
+.blockpics{
+    width:100%;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.white{
+	background-color: white;
+}
+.container1{
+    position: relative;
+}
+.container1:hover .blockpics {
+
+    opacity: 0.3;
+    color: #000;
+}
+
+.container1:hover .hovereffect {
+    opacity: 1;
+}
+.hovereffect {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+}
+.text {
+    background-color: #eee;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+
+}
+.text:hover{
+    background-color: #ddd;
+}
+.aboutdiv{
+	padding-top: 100px;
 }

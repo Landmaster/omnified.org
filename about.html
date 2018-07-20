@@ -1,0 +1,145 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>OTHER</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css" />
+	<link rel="icon" type="image/bmp" href="smolicon.bmp"/>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+	<!--Navigation bar-->
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function(){
+  				$("#nav-placeholder").load("nav.html");
+			});
+
+
+	    	$(document).ready(function(){
+			  $(window).bind('scroll', function() {
+			    var distance = 50;
+			    if ($(window).scrollTop() > distance) {
+			      $('header').addClass('scrolled');
+			    }
+			    else {
+			      $('header').removeClass('scrolled');
+			    }
+			  });
+			});
+		</script>
+
+	<!--end of Navigation bar-->
+	</header>
+    <img src="img/orionw.png" alt = "college" class="orionimg">
+    <div class="sect sectOne"></div>
+		<div class="eight">
+			<div class = "mainbody">
+				<div>
+	                    <h2>About us</h2>
+	                    <p >Below you will find an assortment of small scale projects, either headed by an single individual on our nonprofit or a subproject of another project on this site.		
+
+						</p>
+				</div>
+				    </div>
+    <div class="row">
+        <div class="column bioCol">
+            <div class = "centerimages">
+                <div class="container1">
+                    <img data-aos="fade-up" data-aos-duration="1000" src="img/ckage.png" class="blockpics">
+                    <a href = "https://github.com/omnifiedtechnologies/lyzer" class="hovereffect">
+                        <div class="text">See Project</div>
+                    </a>
+                </div>
+                <!-- <div class="container">
+                    <img data-aos="fade-up" data-aos-duration="1000" src="img/academia.png" class="blockpics" >
+                    <a href = "http://academiaroboticard.org" class="hovereffect">
+                        <div class="text">See Project</div>
+                    </a>
+                </div>
+                <div class="container">
+                    <img data-aos="fade-up" data-aos-duration="1000" src="img/microdot.png" class="blockpics" >
+                    <a href = "https://microdot.tech/" class="hovereffect">
+                        <div class="text">See Project</div>
+                    </a>
+                </div>  -->    
+            </div>
+        </div>
+        <div class="column bioCol">
+            <div class = "centerimages">
+                <div class="container1">
+                    <img data-aos="fade-up" data-aos-duration="1500" src="img/microdot.png" class="blockpics">
+                    <a href = "https://github.com/simonmahns/microdot" class="hovereffect">
+                        <div class="text">See Project</div>
+                    </a>
+                </div>
+<!--                 <div class="container">
+                    <img data-aos="fade-up" data-aos-duration="1500" src="img/center.png" class="blockpics" >
+                    <a href = "#contactloc" class="hovereffect">
+                        <div class="text">Get a Free Quote</div>
+                    </a>
+                </div>
+                <div class="container">
+                    <img data-aos="fade-up" data-aos-duration="1500" src="img/fractal.png" class="blockpics" >
+                    <a href = "https://github.com/simonmahns/fractal" class="hovereffect">
+                        <div class="text">See Project</div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <div class="column bioCol">
+            <div class="container1">
+                <img data-aos="fade-up" data-aos-duration="2000" src="img/mandelbots.jpg" class="blockpics">
+                <a href = "http://themandelbots.com/" class="hovereffect">
+                    <div class="text">See Project</div>
+                </a>
+            </div>
+<!--             <div class="container">
+                <img data-aos="fade-up" data-aos-duration="2000" src="img/minithon.PNG" class="blockpics">
+                <a href = "http://uhsminithon.com/" class="hovereffect">
+                    <div class="text">See Project</div>
+                </a>
+            </div>
+            <div class="container">
+                <img data-aos="fade-up" data-aos-duration="2000" src="img/orion.PNG" class="blockpics">
+                <a href = "http://orionmd.org/" class="hovereffect">
+                    <div class="text">See Project</div>
+                </a>
+            </div> -->
+        </div>
+    </div>
+        	
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script>
+        (() => {
+            AOS.init({duration: 1200});
+
+        })();
+    </script>
+
+<footer >
+
+	
+  	<div class = paypal>
+  		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="MWBQFPXHEY2XS">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+  	</div>
+  	
+</footer>
+</html>

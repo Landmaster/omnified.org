@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>FSPACE</title>
+	<title>STEMDR</title>
 	<link rel="icon" type="image/bmp" href="smolicon.bmp"/>
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -19,12 +19,7 @@
 	<header>
 	<!--Navigation bar-->
 		<div id="nav-placeholder"></div>
-		<script>
-			$(function(){
-  				$("#nav-placeholder").load("nav.html");
-			});
-
-
+		<script type = "text/javascript">
 	    	$(document).ready(function(){
 			  $(window).bind('scroll', function() {
 			    var distance = 50;
@@ -36,37 +31,46 @@
 			    }
 			  });
 			});
+			$('.carousel').carousel({
+  				interval: 6000
+			});
 		</script>
-
+		<script>
+			$(function(){
+  				$("#nav-placeholder").load("nav.html");
+			});
+		</script>
 	<!--end of Navigation bar-->
 	</header>
-	<div class="sect sectThree"></div>
-		<div class="four">
+	<div class="sect sectFour"></div>
+		<div class="five">
 			<div class = "mainbody">
 				<div class="row">
             		<div class="left column">
-	                    <h2 class ='fspacetext'>More than a Makerspace</h2>
-	                    <p class ='fspacetext'>F[Space] Is a Makerspace/Hackerspace based in downtown Frederick, MD. On top of providing various fabrication/prototyping resources, F[Space] seeks to be a collaboration space. One where STEM communities throughout Maryland can share projects and help educate others of their endorse. F[Space] also hosts monthly talks at Hood College about various topics, from robotics to lockpicking.
-						</br> To learn more, visit the F[Space] website
-						</br> Contact info: fspace@omnified.org
+	                    <h2>Supporting tomorrow's leaders</h2>
+	                    <p>Stem Dominicana is a entity dedicated to promoting STEM education in the Dominican Republic. STEM Dominicana has successfully led two consecutive years of Academia Robotica, a robotics camp based in Santo Domingo. This camp has taught Lego robotics, scratch, circuitry, and Arduino programming public high school kids. This camp is an all-expenses paid experience for the students. Additionally, Princeton University and JPAL are working with ORION to collect data about the happenings within the camp, such as teamwork dynamics and teaching methods. Academia Robotica is part of a 4-year study that aims to prove the incredible positive impact a few short weeks every summer can have on a student’s life. 
+						</br> <a href=”http://academiaroboticard.org”>Academia Robotica website</a>
 
 						</p>
-						<a href="https://twitter.com/fredmdspace?lang=en">
-						<p class ='fspacetext'>twitter</p>
+
 					</a>
 						
 					</div>
             	
            			<div class="right column">
                 		<div class = "centerimages">
-                    		<img src="img/fspacepic.jpg"  class="imageright">
+                    		<img src="img/academiapic1.jpg"  class="imageright">
 		                </div>
         		    </div>
         		</div>
         	</div>
         </div>
+
+
+
 </body>
-<footer class = "fspacefooter">
+
+<footer class = "stemfooter">
 
 	
   	<div class = paypal>
