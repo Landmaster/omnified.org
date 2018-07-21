@@ -31,7 +31,7 @@ body {
 	
 }
 .titlepagetext{
-	width: 200px;
+	width: 150px;
 	position: absolute;
 	left: 50%;
 	margin-left: -300px;
@@ -47,7 +47,7 @@ body {
 	width: 250px;
 	position: absolute;
 	left: 50%;
-	margin-left: -150px;
+	margin-left: -120px;
 	border: 0px solid black;
     white-space: nowrap;
 	margin-top: 23%;	
@@ -76,7 +76,7 @@ width: 200px;
 	width: 200px;
 	position: absolute;
 	left: 50%;
-	margin-left: -360px;
+	margin-left: -385px;
 	border: 0px solid black;
     white-space: nowrap;
 	margin-top: 23%;	
@@ -100,7 +100,37 @@ width: 200px;
   background-color: #222;
 }
 
+@media screen and (max-width: 600px) {
+  .fspaceimg{
+    margin-top: 46%;
+  }
 
+  .titlepagetextcomp{
+    margin-top: 46%;
+    font-size: 13px;
+    margin-left: -250px;
+
+  }
+
+  .orionimg{
+
+    margin-top: 46%;
+
+
+  }
+  .titlepagetext{
+    font-size: 21px;
+    margin-left: -150px;
+    margin-top: 46%;
+
+  }
+
+  .titlepagetextbottomleft{
+    font-size: 21px;
+    margin-left: -110px;
+    margin-top: 46%;
+  }
+}
 
 .logo {
   float: left;
@@ -207,19 +237,35 @@ h1, h2,h3, h4,h5, h6{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;float:right;
+    align-items: center;
 }
 .imagerightlong{
 	height: 100%;
 	max-height:350px;
 	padding-left: 10px;
 	margin-top:12%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;float:right;
 }
 
+@media screen and (max-width: 800px) {
+  .imagerightlong{
+    margin-left: 0px;
+    
+    
+    
+  }
+  .imageright{
+    margin-left: 0px;
+    
+    
+    
+  }
+
+}
+.centerimages{
+  justify-content: center;
+  text-align: center;
+
+}
 .textwhite{
 	color:white;
 }
@@ -477,13 +523,18 @@ footer {
 	width: 350px;
 	position: absolute;
 	left: 50%;
-	margin-left: -150px;
+	margin-left: -170px;
 	border: 0px solid black;
     white-space: nowrap;
 	margin-top: 23%;	
 	color:#fff;
 	font-size: 40px;
 
+}
+@media screen and (max-width: 600px) {
+  .collegeimg{
+  margin-top: 46%;
+  }
 
 }
 .spacerdiv{
@@ -684,7 +735,7 @@ nav ul{
 }
 nav li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 20px;
   padding-top: 30px;
 
 
