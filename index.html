@@ -5,23 +5,17 @@
 	    <link rel="stylesheet" href="css/index.css" />	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-		<link rel="apple-touch-icon" sizes="57x57" href="/img/favcon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/img/favcon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/img/favcon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/img/favcon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/img/favcon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/img/favcon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/img/favcon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/img/favcon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/img/favcon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/img/favcon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/img/favcon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/img/favcon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/img/favcon/favicon-16x16.png">
-		<link rel="manifest" href="/img/favcon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/img/favcon/ms-icon-144x144.png">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="theme-color" content="#ffffff">
+
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
     </head>
@@ -66,6 +60,7 @@
 		                    <p>ORION is a US based nonprofit (501c3) dedicated to providing a wide assortment of STEM oriented education resources, from mentors to grant money, for both organizations and students. Our nonprofit team consists of self-starters and passionate hard workers, some of which are studying at the nation’s most prestigious colleges. Regardless of what institution we hail from, we are united by our universal motivation to help students realize their full potential and to create environments where innovation and invention can be easily cultivated. 
 							</br>
 							</br>Enough with the boring stuff, check out our cool projects!
+							</br> <i> In the menu you will find our larger scale projects, which are managed by committees within the nonprofit. To see our smaller projects and others, check "other"</i>
 							</p>
 						</div>
 	            	
@@ -100,9 +95,10 @@
 				    <div class="row">
 					    <div class="contactcolumn west">
 					        <div class="formWrapper">
-					            <input type="text" class="field" required name="name" placeholder="Name">
-					            <input type="text" class="field" required name="email" placeholder="Email">
-					            <textarea id = "message" class="field" name="Message" required placeholder="Message"></textarea>
+					        	<form>
+					            <input type="text" class="field" required name="first_name" placeholder="Name">
+					            <input type="text" class="field" required name="email_address" placeholder="Email">
+					            <textarea id = "message" class="field" name="comments" required placeholder="Message"></textarea>
 					            <input class="contactbutt" type="submit" value="Contact us!">
 					            </form>
 					        </div> 
@@ -127,17 +123,27 @@
 
 
 </body>
-<footer >
+<footer class = inline>
+	<div class="row">
+	    <div class="footleft column">
+		    <div class = paypal>
+		  		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="MWBQFPXHEY2XS">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</div>
+  		</div>
 
-	
-  	<div class = paypal>
-  		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="MWBQFPXHEY2XS">
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
-  	</div>
-  	
+	            	
+		<div class="footright column">
+	        </br>
+
+	        <a class="blacktextlink" href ="donate.html">
+	  			<p>Donation Information</p>
+	  		</a>
+	    </div>
+	</div>
 </footer>
 </html>	
