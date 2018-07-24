@@ -2,11 +2,9 @@
 	<head>	
 		<meta charset="utf-8">
 		<title>ORION</title>
-	    <link rel="stylesheet" href="css/index.css" />	
+	   	<link rel="stylesheet" href="css/index.css" />	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
-		
-
+		<!--icon-->
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -14,136 +12,110 @@
 		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="theme-color" content="#ffffff">
-
-
+		<!--viewport (mobile friendly)-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-    </head>
+	</head>
 
-    <script type = "text/javascript">
-
-    	$(document).ready(function(){
-		  $(window).bind('scroll', function() {
-		    var distance = 50;
-		    if ($(window).scrollTop() > distance) {
-		      $('header').addClass('scrolled');
-		    }
-		    else {
-		      $('header').removeClass('scrolled');
-		    }
-		  });
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$(window).bind('scroll', function() {
+				var distance = 50;
+				if ($(window).scrollTop() > distance) {
+			      		$('header').addClass('scrolled');
+			    	}
+			    	else {
+			     		$('header').removeClass('scrolled');
+			    	}
+			  });
 		});
 	</script>
-    <body>
-		
-
-
+    	
+	<body>
+	<!--Navigation bar-->	
 		<header role='navigation' >
-	<!--Navigation bar-->
-
-		<div id="nav-placeholder"></div>
-		<script>
-			$(function(){
-  				$("#nav-placeholder").load("nav.html");
-			});
-		</script>
-	<!--end of Navigation bar-->
+			<div id="nav-placeholder"></div>
+			<script>
+				$(function(){
+						$("#nav-placeholder").load("nav.html");
+				});
+			</script>
 		</header>
+
+
 		<h1 class = "titlepagetext"role='navigation'>INNOVATION IS FOR EVERYONE</h1>
-
 		<div class="sect sectOne"></div>
-			<div class="one">
-				<div class = "mainbody">
-					<div class="row">
-	            		<div class="left column">
-		                    <h2>Facilitating the Future</h2>
-		                    <p>ORION is a US based nonprofit (501c3) dedicated to providing a wide assortment of STEM oriented education resources, from mentors to grant money, for both organizations and students. Our nonprofit team consists of self-starters and passionate hard workers, some of which are studying at the nation’s most prestigious colleges. Regardless of what institution we hail from, we are united by our universal motivation to help students realize their full potential and to create environments where innovation and invention can be easily cultivated. 
-							</br>
-							</br>Enough with the boring stuff, check out our cool projects!
-							</br> <i> In the menu you will find our larger scale projects, which are managed by committees within the nonprofit. To see our smaller projects and others, check "other"</i>
-							</p>
-						</div>
-	            	
-	           			<div class="right column">
-	                		<div class = "centerimages">
-	                    		<img src="img/frontpic1.jpg"  class="imageright">
-			                </div>
-	        		    </div>
-	        		</div>
-	        	</div>
-			</div>	
-
-
+		<div class="one">
+			<div class = "mainbody">
+				<div class="row">
+    				<div class="left column">
+	                	<h2>Facilitating the Future</h2>
+		                <p>ORION is a US based nonprofit (501c3) dedicated to providing a wide assortment of STEM oriented education resources, from mentors to grant money, for both organizations and students. Our nonprofit team consists of self-starters and passionate hard workers, some of which are studying at the nation’s most prestigious colleges. Regardless of what institution we hail from, we are united by our universal motivation to help students realize their full potential and to create environments where innovation and invention can be easily cultivated. 
+						</br>
+						</br>Enough with the boring stuff, check out our cool projects!
+						</br> <i> In the menu you will find our larger scale projects, which are managed by committees within the nonprofit. To see our smaller projects and others, check "other"</i>
+						</p>
+					</div>
+       				<div class="right column">
+            			<div class = "centerimages">
+                			<img src="img/frontpic1.JPG"  class="imageright">
+                		</div>
+		    		</div>
+				</div>
+			</div>
 			<div class="two">
 				<div class = "mainbody">
-					
 					<div class = "sponsordiv">
 						<p class ="">Sponsors/Partners</p>
 	  					<img src="img/princeton.png" alt = "sponsor" class="sponsor">
 	  					<img src="img/walmart.png" alt = "sponsor" class="sponsor">
-	  					
 	  					<img src="img/uth.png" alt = "sponsor" class="sponsor">
 						
-  					</div>
+					</div>
 				</div>
 			</div>
-
 			<div class="three">
 				<div class = "mainbodycontact">
-					<a name="contactloc"></a>
-				    
-				    <div class="row">
-					    <div class="contactcolumn west">
-					        <div class="formWrapper">
-					        	<form>
-					            <input type="text" class="field" required name="first_name" placeholder="Name">
-					            <input type="text" class="field" required name="email_address" placeholder="Email">
-					            <textarea id = "message" class="field" name="comments" required placeholder="Message"></textarea>
-					            <input class="contactbutt" type="submit" value="Contact us!">
-					            </form>
-					        </div> 
-					    </div>
-					    <div class="contactcolumn south">
-					        <div class = "formatdiv">
-					            <p class = 'spacingup'> Email us at outreach@omnified.org</p>
-					        </div>
-				        </div>
-				    </div>
+		    		<div class="row">
+			    		<div class="contactcolumn west">
+			        		<div class="formWrapper">
+			        			<form method="post" action="send_mail.php">
+						            <input type="text" class="field" required name="first_name" placeholder="Name">
+						            <input type="text" class="field" required name="email_address" placeholder="Email">
+						            <textarea id = "message" class="field" name="comments" required placeholder="Message"></textarea>
+						            <button class="contactbutt" type="submit" >Contact us!</button>
+			            		</form>
+			       			</div> 
+			    		</div>
+			    		<div class="contactcolumn south">
+			        		<div class = "formatdiv">
+			            			<p class = 'spacingup'> Email us at outreach@omnified.org</p>
+			        		</div>
+		        		</div>
+		    		</div>
 				</div>
 			</div>
 		</div>
+	</body>
 
-<!-- <div class="four"></div>
-
-<div class="five"></div>
-
-<div class="six"></div>
-
-<div class="seven"></div> -->
-
-
-</body>
-<footer class = inline>
-	<div class="row">
-	    <div class="footleft column">
-		    <div class = paypal>
-		  		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="MWBQFPXHEY2XS">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>
-			</div>
-  		</div>
-
-	            	
-		<div class="footright column">
-	        </br>
-
-	        <a class="blacktextlink" href ="donate.html">
-	  			<p>Donation Information</p>
-	  		</a>
-	    </div>
-	</div>
-</footer>
+	<footer class = inline>
+		<div class="row">
+			<div class="footleft column">
+				<div class = paypal>
+			  		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="MWBQFPXHEY2XS">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				</div>
+	  		</div>
+			<div class="footright column">
+	        		</br>
+				<a class="blacktextlink" href ="donate.html">
+	  				<p>Donation Information</p>
+	  			</a>
+	    	</div>
+		</div>
+	</footer>
 </html>	
