@@ -4,9 +4,6 @@
 		<title>ORION</title>
 	    <link rel="stylesheet" href="css/index.css" />	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
-		
-
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -14,68 +11,57 @@
 		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="theme-color" content="#ffffff">
-
-
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
     </head>
-<div class="funback">
-<body>
-	<header>
-	<!--Navigation bar-->
-		<div id="nav-placeholder"></div>
-		<script>
-			$(function(){
-  				$("#nav-placeholder").load("nav.html");
-			});
+	<div class="funback">
+		<body>
+			<header>
+			<!--Navigation bar-->
+				<div id="nav-placeholder"></div>
+				<script>
+					$(function(){
+		  				$("#nav-placeholder").load("nav.html");
+					});
 
 
-	    	$(document).ready(function(){
-			  $(window).bind('scroll', function() {
-			    var distance = 50;
-			    if ($(window).scrollTop() > distance) {
-			      $('header').addClass('scrolled');
-			    }
-			    else {
-			      $('header').removeClass('scrolled');
-			    }
-			  });
-			});
-		</script>
-
-	<!--end of Navigation bar-->
-	</header>
-
-
-<div class="centerimages" >
-    <img src="img/thanks.png" alt = "logo" class="thanks" class = "buttonsthank"></div>
-
-
-<footer class = "transfooter">
-
-	
-  	<div class="row">
-	    <div class="footleft column">
-		    <div class = paypal>
-		  		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="MWBQFPXHEY2XS">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>
+			    	$(document).ready(function(){
+					  $(window).bind('scroll', function() {
+					    var distance = 50;
+					    if ($(window).scrollTop() > distance) {
+					      $('header').addClass('scrolled');
+					    }
+					    else {
+					      $('header').removeClass('scrolled');
+					    }
+					  });
+					});
+				</script>
+			<!--end of Navigation bar-->
+			</header>
+			<div class="centerimages" >
+			    <img src="img/thanks.png" alt = "logo" class="thanks" class = "buttonsthank">
 			</div>
-  		</div>
-
-	            	
-		<div class="footright column">
-	        </br>
-
-	        <a class="blacktextlink" href ="donate.html">
-	  			<p>Donation Information</p>
-	  		</a>
-	    </div>
+		</body>
+		<footer class = "transfooter">
+		  	<div class="row">
+			    <div class="footleft column">
+				    <div class = paypal>
+				  		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="MWBQFPXHEY2XS">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+		  		</div>   	
+				<div class="footright column">
+			        </br>
+			        <a class="blacktextlink" href ="donate.html">
+			  			<p>Donation Information</p>
+			  		</a>
+			    </div>
+			</div>
+		</footer>
 	</div>
-  	
-</footer>
-</div>
 </html>
